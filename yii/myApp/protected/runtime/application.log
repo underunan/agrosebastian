@@ -1,0 +1,170 @@
+2015/07/30 01:07:03 [error] [exception.CException] exception 'CException' with message 'CUrlManager.UrlFormat must be either "path" or "get".' in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:511
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CComponent.php(152): CUrlManager->setUrlFormat('.html')
+#1 C:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', '.html')
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(530): CModule->getComponent('urlManager')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/myApp/index.php/site/index
+HTTP_REFERER=http://localhost/yii/myApp/index.php/site/index
+---
+2015/07/30 01:07:12 [error] [exception.CException] exception 'CException' with message 'CUrlManager.UrlFormat must be either "path" or "get".' in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:511
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CComponent.php(152): CUrlManager->setUrlFormat('path.html')
+#1 C:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path.html')
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(530): CModule->getComponent('urlManager')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/myApp/index.php/site/index
+---
+2015/07/30 01:07:16 [error] [exception.CException] exception 'CException' with message 'CUrlManager.UrlFormat must be either "path" or "get".' in C:\xampp\htdocs\yii\framework\web\CUrlManager.php:511
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CComponent.php(152): CUrlManager->setUrlFormat('path.html')
+#1 C:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path.html')
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(530): CModule->getComponent('urlManager')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/myApp/index.php/site/login
+HTTP_REFERER=http://localhost/yii/myApp/index.php/site/page?view=about
+---
+2015/07/30 01:30:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indexindex".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('indexindex')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('indexindex')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/indexindex')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/myApp/site/indexindex.html
+HTTP_REFERER=http://localhost/yii/myApp/site/index
+---
+2015/07/30 01:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indexindex.".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('indexindex.')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('indexindex.')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/indexindex...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/myApp/site/indexindex.html
+HTTP_REFERER=http://localhost/yii/myApp/site/index
+---
+2015/07/30 01:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indexhtml".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('indexhtml')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('indexhtml')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/indexhtml')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/myApp/site/indexhtml
+HTTP_REFERER=http://localhost/yii/myApp/site/pagehtml?view=about
+---
+2015/07/30 01:31:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indexhtml".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('indexhtml')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('indexhtml')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/indexhtml')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/myApp/site/indexhtml
+HTTP_REFERER=http://localhost/yii/myApp/site/pagehtml?view=about
+---
+2015/07/30 01:51:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/myApp/index
+---
+2015/08/01 03:56:15 [error] [php] Missing argument 1 for Users::tableName(), called in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php on line 2383 and defined (C:\xampp\htdocs\yii\myApp\protected\models\Users.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(661): Users->getMetaData()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1355): Users->getTableSchema()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#3 C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php(6): Users->findAll()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): HolaController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): HolaController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\myApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/myApp/hola
+in C:\xampp\htdocs\yii\myApp\protected\models\Users.php (4)
+in C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php (6)
+in C:\xampp\htdocs\yii\myApp\index.php (13)
+2015/08/01 03:56:27 [error] [php] Missing argument 1 for Users::tableName(), called in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php on line 2383 and defined (C:\xampp\htdocs\yii\myApp\protected\models\Users.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(661): Users->getMetaData()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1355): Users->getTableSchema()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#3 C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php(6): Users->findAll()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): HolaController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): HolaController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\myApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/myApp/hola/index
+in C:\xampp\htdocs\yii\myApp\protected\models\Users.php (4)
+in C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php (6)
+in C:\xampp\htdocs\yii\myApp\index.php (13)
+2015/08/01 03:59:08 [error] [php] Missing argument 1 for Users::tableName(), called in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php on line 2383 and defined (C:\xampp\htdocs\yii\myApp\protected\models\Users.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(661): Users->getMetaData()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1355): Users->getTableSchema()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#3 C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php(6): Users->findAll()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): HolaController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): HolaController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\myApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/myApp/hola/index
+in C:\xampp\htdocs\yii\myApp\protected\models\Users.php (4)
+in C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php (6)
+in C:\xampp\htdocs\yii\myApp\index.php (13)
+2015/08/01 03:59:29 [error] [php] Missing argument 1 for Users::tableName(), called in C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php on line 2383 and defined (C:\xampp\htdocs\yii\myApp\protected\models\Users.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(661): Users->getMetaData()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1355): Users->getTableSchema()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1475): Users->query()
+#3 C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php(6): Users->findAll()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): HolaController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): HolaController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\myApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/myApp/hola/index
+in C:\xampp\htdocs\yii\myApp\protected\models\Users.php (4)
+in C:\xampp\htdocs\yii\myApp\protected\controllers\HolaController.php (6)
+in C:\xampp\htdocs\yii\myApp\index.php (13)
+2015/08/03 04:40:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\myApp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/myApp/index
+---
