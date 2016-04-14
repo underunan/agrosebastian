@@ -7,6 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
+	array('label'=>'Ver todo el ganado', 'url'=>array('ganado/index')),
 	array('label'=>'Agregar parto', 'url'=>array('create')),
 	array('label'=>'Control de parto', 'url'=>array('admin')),
 );

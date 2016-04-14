@@ -124,8 +124,10 @@ class CubiertaController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Cubierta');
+		$model=new Cubierta('search');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+			'model'=>$model,
 		));
 	}
 
