@@ -50,7 +50,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'codigo',
 		'nombre',
 		'fecha_nacimiento',
-		'imagen',
+		array(
+			'name' => 'imagen',
+			#'header' => 'Imagen',
+			'type'=>'raw',
+			'value'=> 'CHtml::image(Yii::app()->baseUrl."/users-images/".$data->imagen,$data->imagen,array("width"=>"60px","class"=>"img-responsive img-thumbnail text-center"))'
+			),
 		'raza',
 		array(
 			'class'=>'booster.widgets.TbButtonColumn',
