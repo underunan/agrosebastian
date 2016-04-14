@@ -11,6 +11,7 @@ $this->menu=array(
 	array('label'=>'Control ganado', 'url'=>array('admin')),
 	array('label'=>'Ver ganado cubierto', 'url'=>array('cubierta/index')),
 	array('label'=>'Ver parto', 'url'=>array('parto/index')),
+	array('label'=>'Aplicación de vacunas', 'url'=>array('vacuna/index')),
 );
 ?>
 
