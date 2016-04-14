@@ -40,10 +40,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('booster.widgets.TbGridView', array(
 	'id'=>'ganado-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'type' => 'striped condensed',
 	'columns'=>array(
 		'idganado',
 		'codigo',
@@ -52,7 +53,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'imagen',
 		'raza',
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'booster.widgets.TbButtonColumn',
+			'htmlOptions' => array('nowrap'=>'nowrap'),
 		),
 	),
 )); ?>
