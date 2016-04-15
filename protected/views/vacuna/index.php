@@ -7,12 +7,28 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Vacuna', 'url'=>array('create')),
-	array('label'=>'Manage Vacuna', 'url'=>array('admin')),
+	array('label'=>'Ver todos los ganados', 'url'=>array('ganado/index')),
+	array('label'=>'Ver ganado cubierto', 'url'=>array('cubierta/index')),
+	array('label'=>'Ver parto', 'url'=>array('parto/index')),
 );
 ?>
 
-<h1>Vacunas</h1>
+<h2 class="text-center text-info">Vacunas aplicadas al ganado</h2>
+<?php
+Yii::app()->clientScript->registerScript('search', "
+$('.search-button').click(function(){
+	$('.search-form').toggle();
+	return false;
+});
+$('.search-form form').submit(function(){
+	$('#vacuna-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
+?>
+
 
 <?php 
 
@@ -35,8 +51,9 @@ $this->widget(
 			),
 
     ),
-      'id'=>'cubierta-grid',
+      'id'=>'vacuna-grid',
       'dataProvider'=>$model->search(),
+      'filter'=>$model,
       'type' => 'striped condensed',
     )
 );

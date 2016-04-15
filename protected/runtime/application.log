@@ -4377,3 +4377,64 @@ REQUEST_URI=/index.php?r=vacuna/index
 in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\views\vacuna\_view.php (17)
 in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\views\vacuna\index.php (20)
 in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\VacunaController.php (128)
+2016/04/15 16:40:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ganado/view')
+#10 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=ganado/view
+---
+2016/04/15 20:42:06 [warning] [application] Failed to set unsafe attribute "observacion" of "Parto".
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php (72)
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php (13)
+2016/04/15 20:42:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para el enum sexos: «incompleto»
+LINE 1: ... "fecha_parto", "sexo") VALUES (30, '2016-04-14', 'incomplet...
+                                                             ^. The SQL statement executed was: INSERT INTO "Parto" ("idganado", "fecha_parto", "sexo") VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php (73)
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php (13)
+2016/04/15 20:42:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para el enum sexos: «incompleto»
+LINE 1: ... "fecha_parto", "sexo") VALUES (30, '2016-04-14', 'incomplet...
+                                                             ^. The SQL statement executed was: INSERT INTO "Parto" ("idganado", "fecha_parto", "sexo") VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\actions\CInlineAction.php(49): PartoController->actionCreate()
+#4 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('parto/create')
+#14 C:\xampp\htdocs\ejemplo-yii\agrosebastian\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=parto/create
+HTTP_REFERER=http://agrosebastian.com/index.php?r=parto/create
+---
+2016/04/15 20:43:06 [warning] [application] Failed to set unsafe attribute "observacion" of "Parto".
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php (72)
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php (13)
+2016/04/15 20:50:09 [warning] [application] Failed to set unsafe attribute "observacion" of "Parto".
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php (72)
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php (13)
+2016/04/15 21:04:59 [warning] [application] Failed to set unsafe attribute "observacion" of "Parto".
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php (72)
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php (13)
+2016/04/15 21:06:09 [warning] [application] Failed to set unsafe attribute "observacion" of "Parto".
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\protected\controllers\PartoController.php (72)
+in C:\xampp\htdocs\ejemplo-yii\agrosebastian\index.php (13)

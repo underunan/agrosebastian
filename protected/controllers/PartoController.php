@@ -123,8 +123,10 @@ class PartoController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Parto');
+		$model=new Parto('search');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+			'model'=>$model,
 		));
 	}
 

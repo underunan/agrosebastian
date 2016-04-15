@@ -1,6 +1,6 @@
 <?php /* @var $this Controller */ ?>
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="col-sm-3">
+<div class="col-sm-2">
 	<div id="sidebar">
 	<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
@@ -14,7 +14,7 @@
 	?>
 	</div><!-- sidebar -->
 </div>
-<div class="col-sm-9">
+<div class="col-sm-10">
 	<div id="content">
 		<?php echo $content; ?>
 	</div><!-- content -->

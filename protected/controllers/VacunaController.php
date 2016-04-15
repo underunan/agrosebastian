@@ -124,10 +124,20 @@ class VacunaController extends Controller
 	{
 		$dataProvider=new CActiveDataProvider('Vacuna');
 		$model=new Vacuna('search');
+
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Vacuna']))
+			$model->attributes=$_GET['Vacuna'];
+
+		$this->render('index',array(
+			'model'=>$model,
+		));
+		/*
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 			'model'=>$model,
 		));
+		*/
 	}
 
 	/**

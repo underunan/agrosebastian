@@ -7,6 +7,7 @@
  * @property integer $idparto
  * @property integer $idganado
  * @property string $fecha_parto
+ * @property string $observacion
  * @property string $sexo
  *
  * The followings are the available model relations:
@@ -32,10 +33,11 @@ class Parto extends CActiveRecord
 		return array(
 			array('idganado, fecha_parto', 'required'),
 			array('idganado', 'numerical', 'integerOnly'=>true),
-			array('sexo', 'safe'),
+			array('sexo', 'length', 'max'=>50),
+			array('observacion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idparto, idganado, fecha_parto, sexo', 'safe', 'on'=>'search'),
+			array('idparto, idganado, fecha_parto, observacion, sexo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,6 +62,7 @@ class Parto extends CActiveRecord
 			'idparto' => 'Idparto',
 			'idganado' => 'Idganado',
 			'fecha_parto' => 'Fecha Parto',
+			'observacion' => 'Observación',
 			'sexo' => 'Sexo',
 		);
 	}
@@ -85,7 +88,9 @@ class Parto extends CActiveRecord
 		$criteria->compare('idparto',$this->idparto);
 		$criteria->compare('idganado',$this->idganado);
 		$criteria->compare('fecha_parto',$this->fecha_parto,true);
+		$criteria->compare('observacion',$this->observacion,true);
 		$criteria->compare('sexo',$this->sexo,true);
+
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Ver todos los ganados', 'url'=>array('ganado/index')),
-	array('label'=>'Agregar un ganado cubierta', 'url'=>array('create')),
-	array('label'=>'Control de ganado cubierta', 'url'=>array('admin')),
+	array('label'=>'Ver parto', 'url'=>array('parto/index')),
+  array('label'=>'Aplicación de vacunas', 'url'=>array('vacuna/index')),
 );
 ?>
 

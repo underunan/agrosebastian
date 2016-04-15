@@ -33,8 +33,14 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'sexo'); ?>
-		<?php echo $form->dropDownList($model,'sexo',array('hembra'=>'hembra','macho'=>'macho'),array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'sexo',array('hembra'=>'hembra','macho'=>'macho','incompleto' => 'incompleto'),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'sexo'); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'observacion'); ?>
+		<?php echo $form->textArea($model,'observacion',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'observacion'); ?>
 	</div>
 
 	<div class="form-group">
